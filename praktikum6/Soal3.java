@@ -1,44 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package praktikum6;
+package week6;
 
 import java.util.*;
 
-/**
- *
- * @author Bagaskara
- */
-public class Soal3 {
-
+public class Case3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int baris, kolom, max = -999999999, min = 999999999;
-        System.out.println("Selamat Datang");
+        int rows, columns, max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
+        
+        System.out.println("Welcome");
 
-        System.out.print("Masukan Baris Matriks = ");
-        baris = input.nextInt();
+        System.out.print("Enter the Number of Rows = ");
+        rows = input.nextInt();
 
-        System.out.print("Masukan Kolom Matriks = ");
-        kolom = input.nextInt();
+        System.out.print("Enter the Number of Columns = ");
+        columns = input.nextInt();
 
-        int[][] matriks = new int[baris][kolom];
+        int[][] matrix = new int[rows][columns];
 
-        for (int i = 0; i < baris; i++) {
-            for (int j = 0; j < kolom; j++) {
-                int k = i + 1;
-                int l = j + 1;
-                System.out.print("Masukan Nilai Baris " + k + " dan " + l + " = ");
-                matriks[i][j] = input.nextInt();
-                if (matriks[i][j] > max) {
-                    max = matriks[i][j];
-                } else if (matriks[i][j] < min) {
-                    min = matriks[i][j];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                int rowNumber = i + 1;
+                int columnNumber = j + 1;
+                System.out.print("Enter the Value for Row " + rowNumber + " and Column " + columnNumber + " = ");
+                matrix[i][j] = input.nextInt();
+                
+                if (matrix[i][j] > max) {
+                    max = matrix[i][j];
+                }
+                if (matrix[i][j] < min) {
+                    min = matrix[i][j];
                 }
             }
         }
-        System.out.println("Nilai Maksimum = " + max);
-        System.out.println("Nilai Minimum = " + min);
+        System.out.println("Maximum Value = " + max);
+        System.out.println("Minimum Value = " + min);
     }
 }
