@@ -1,20 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package praktikum3;
+package ;
 
-/**
- *
- * @author Bagaskara
- */
-public class Soal4 extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Soal4new
-     */
-    public Soal4() {
+public class Case4 extends javax.swing.JFrame {
+    public Case4() {
         initComponents();
     }
 
