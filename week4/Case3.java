@@ -15,8 +15,8 @@ public class Case3 extends javax.swing.JFrame {
     private final javax.swing.JRadioButton choose2;
     private final javax.swing.JScrollPane jScrollPane1;
     private final javax.swing.JTextArea output;
-    private final javax.swing.JTextField inputAlas;
-    private final javax.swing.JTextField inputTinggi;
+    private final javax.swing.JTextField inputBase;
+    private final javax.swing.JTextField inputHeight;
 
     public Case3() {
         initComponents();
@@ -32,8 +32,8 @@ public class Case3 extends javax.swing.JFrame {
         choose1 = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        inputAlas = new javax.swing.JTextField();
-        inputTinggi = new javax.swing.JTextField();
+        inputBase = new javax.swing.JTextField();
+        inputHeight = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         output = new javax.swing.JTextArea();
@@ -57,9 +57,9 @@ public class Case3 extends javax.swing.JFrame {
 
         jLabel3.setText("Input Height:");
 
-        inputAlas.addActionListener(new ActionListener() {
+        inputBase.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                inputAlasActionPerformed(evt);
+                inputBaseActionPerformed(evt);
             }
         });
 
@@ -98,8 +98,8 @@ public class Case3 extends javax.swing.JFrame {
                                 .addComponent(jLabel2)
                                 .addGap(27, 27, 27)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(inputTinggi, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
-                            .addComponent(inputAlas))
+                            .addComponent(inputHeight, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
+                            .addComponent(inputBase))
                         .addGap(83, 83, 83))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(layout.createSequentialGroup()
@@ -125,11 +125,11 @@ public class Case3 extends javax.swing.JFrame {
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(inputAlas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(inputBase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
-                    .addComponent(inputTinggi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(inputHeight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
@@ -146,34 +146,34 @@ public class Case3 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }
 
-    private void inputAlasActionPerformed(java.awt.event.ActionEvent evt) {
+    private void inputBaseActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
     }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         if (choose1.isSelected()) {
-            if (inputAlas.getText().isEmpty() && inputTinggi.getText().isEmpty()) {
+            if (inputBase.getText().isEmpty() && inputHeight.getText().isEmpty()) {
                 output.setText("Base and Height are Empty");
-            } else if (inputTinggi.getText().isEmpty()) {
+            } else if (inputHeight.getText().isEmpty()) {
                 output.setText("Height is Empty");
-            } else if (inputAlas.getText().isEmpty()) {
+            } else if (inputBase.getText().isEmpty()) {
                 output.setText("Base is Empty");
             } else {
-                int base = Integer.parseInt(inputAlas.getText());
-                int height = Integer.parseInt(inputTinggi.getText());
+                int base = Integer.parseInt(inputBase.getText());
+                int height = Integer.parseInt(inputHeight.getText());
                 int result = base * height;
                 output.setText("Area of " + choose1.getText() + " is " + result);
             }
         } else if (choose2.isSelected()) {
-            if (inputAlas.getText().isEmpty() && inputTinggi.getText().isEmpty()) {
+            if (inputBase.getText().isEmpty() && inputHeight.getText().isEmpty()) {
                 output.setText("Base and Height are Empty");
-            } else if (inputTinggi.getText().isEmpty()) {
+            } else if (inputHeight.getText().isEmpty()) {
                 output.setText("Height is Empty");
-            } else if (inputAlas.getText().isEmpty()) {
+            } else if (inputBase.getText().isEmpty()) {
                 output.setText("Base is Empty");
             } else {
-                double base = Double.parseDouble(inputAlas.getText());
-                double height = Double.parseDouble(inputTinggi.getText());
+                double base = Double.parseDouble(inputBase.getText());
+                double height = Double.parseDouble(inputHeight.getText());
                 double result = base * height / 2;
                 output.setText("Area of " + choose2.getText() + " is " + result);
             }
@@ -183,8 +183,8 @@ public class Case3 extends javax.swing.JFrame {
     }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
-        inputAlas.setText("");
-        inputTinggi.setText("");
+        inputBase.setText("");
+        inputHeight.setText("");
         output.setText("");
         buttonGroup1.clearSelection();
     }
