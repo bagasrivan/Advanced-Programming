@@ -1,32 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package praktikum7;
+package week7;
 
 import java.util.*;
 
-/**
- *
- * @author Bagaskara
- */
-public class Soal3 {
-
+public class Case3 {
     public static void main(String[] args) {
-        long angka;
+        long number;
         Scanner input = new Scanner(System.in);
-        System.out.print("Masukan Angka = ");
-        angka = input.nextLong();
-        System.out.print("Output Reverse = ");
-        reverse(angka);
+        System.out.print("Enter a Number = ");
+        number = input.nextLong();
+        System.out.print("Reversed Output = ");
+        reverse(number);
     }
 
-    public static void reverse(long angka) {
-        if (angka <= 9) {
-            System.out.print(angka);
+    public static void reverse(long number) {
+        if (number <= 9) {
+            System.out.print(number);
         } else {
-            System.out.print(angka % 10);
-            reverse(angka / 10);
+            System.out.print(number % 10);
+            reverse(number / 10);
         }
     }
 }
