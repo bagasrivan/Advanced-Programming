@@ -1,20 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package praktikum3;
+package week3;
 
-/**
- *
- * @author Bagaskara
- */
-public class Soal2 extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Soal2
-     */
-    public Soal2() {
+public class Case2 extends javax.swing.JFrame {
+    public Case2() {
         initComponents();
     }
 
@@ -40,7 +27,7 @@ public class Soal2 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setBackground(new java.awt.Color(51, 255, 51));
-        jButton1.setText("Tambah");
+        jButton1.setText("Add");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -48,7 +35,7 @@ public class Soal2 extends javax.swing.JFrame {
         });
 
         jButton2.setBackground(new java.awt.Color(255, 255, 102));
-        jButton2.setText("Kurang");
+        jButton2.setText("Subtract");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -60,7 +47,7 @@ public class Soal2 extends javax.swing.JFrame {
         output.setText("0");
         output.setToolTipText("");
 
-        jLabel1.setText("Input Angka :");
+        jLabel1.setText("Input Number:");
 
         jButton3.setBackground(new java.awt.Color(255, 0, 0));
         jButton3.setText("Reset");
@@ -77,7 +64,7 @@ public class Soal2 extends javax.swing.JFrame {
         status.setText(" ");
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Program GUI Penjumlahan & Pengurangan");
+        jLabel3.setText("GUI Program for Addition & Subtraction");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -132,24 +119,24 @@ public class Soal2 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int a = Integer.parseInt(input.getText());
         int b = Integer.parseInt(output.getText());
-        int hasil = b + a;
-        output.setText("" + hasil);
+        int result = b + a;
+        output.setText("" + result);
 
         int outputStatus = Integer.parseInt(output.getText());
 
         if (outputStatus > 0) {
             if (outputStatus % 2 == 0) {
-                status.setText("Positif Genap");
+                status.setText("Positive Even");
             } else {
-                status.setText("Positif Ganjil");
+                status.setText("Positive Odd");
             }
         } else if (outputStatus == 0) {
-            status.setText("Angka 0");
+            status.setText("Number 0");
         } else if (outputStatus < 0) {
             if (outputStatus % 2 == 0) {
-                status.setText("Negatif Genap");
+                status.setText("Negative Even");
             } else {
-                status.setText("Negatif Ganjil");
+                status.setText("Negative Odd");
             }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -157,24 +144,24 @@ public class Soal2 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         int a = Integer.parseInt(input.getText());
         int b = Integer.parseInt(output.getText());
-        int hasil = b - a;
-        output.setText("" + hasil);
+        int result = b - a;
+        output.setText("" + result);
 
         int outputStatus = Integer.parseInt(output.getText());
 
         if (outputStatus > 0) {
             if (outputStatus % 2 == 0) {
-                status.setText("Positif Genap");
+                status.setText("Positive Even");
             } else {
-                status.setText("Positif Ganjil");
+                status.setText("Positive Odd");
             }
         } else if (outputStatus == 0) {
-            status.setText("Angka 0");
+            status.setText("Number 0");
         } else if (outputStatus < 0) {
             if (outputStatus % 2 == 0) {
-                status.setText("Negatif Genap");
+                status.setText("Negative Even");
             } else {
-                status.setText("Negatif Ganjil");
+                status.setText("Negative Odd");
             }
         }
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -202,21 +189,20 @@ public class Soal2 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Soal2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Soal2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Soal2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Soal2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Soal2().setVisible(true);
+                new Case2().setVisible(true);
             }
         });
     }
