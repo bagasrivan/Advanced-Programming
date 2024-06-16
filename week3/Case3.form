@@ -23,52 +23,100 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jLabel3" alignment="1" max="32767" attributes="0"/>
+          <Component id="jLabel3" alignment="1" max="32767" attributes="0">
+              <Properties>
+                  <Property name="text" type="java.lang.String" value="Calculate Grade"/>
+              </Properties>
+          </Component>
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton2" min="-2" max="-2" attributes="0">
+                          <Properties>
+                              <Property name="text" type="java.lang.String" value="Reset"/>
+                          </Properties>
+                      </Component>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0">
+                          <Properties>
+                              <Property name="text" type="java.lang.String" value="Input Value:"/>
+                          </Properties>
+                      </Component>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="inputAngka" min="-2" pref="101" max="-2" attributes="0"/>
+                      <Component id="inputNumber" min="-2" pref="101" max="-2" attributes="0"/>
                       <EmptySpace pref="29" max="32767" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0">
+                          <Properties>
+                              <Property name="text" type="java.lang.String" value="Submit"/>
+                          </Properties>
+                      </Component>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
-          <Component id="jLabel2" alignment="1" max="32767" attributes="0"/>
-          <Component id="output" alignment="1" max="32767" attributes="0"/>
+          <Component id="jLabel2" alignment="1" max="32767" attributes="0">
+              <Properties>
+                  <Property name="text" type="java.lang.String" value="Letter Grade"/>
+              </Properties>
+          </Component>
+          <Component id="output" alignment="1" max="32767" attributes="0">
+              <Properties>
+                  <Property name="text" type="java.lang.String" value="Output"/>
+              </Properties>
+          </Component>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+              <Component id="jLabel3" min="-2" max="-2" attributes="0">
+                  <Properties>
+                      <Property name="text" type="java.lang.String" value="Calculate Grade"/>
+                  </Properties>
+              </Component>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0">
+                          <Properties>
+                              <Property name="text" type="java.lang.String" value="Submit"/>
+                          </Properties>
+                      </Component>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton2" min="-2" max="-2" attributes="0">
+                          <Properties>
+                              <Property name="text" type="java.lang.String" value="Reset"/>
+                          </Properties>
+                      </Component>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="inputAngka" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="inputNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0">
+                              <Properties>
+                                  <Property name="text" type="java.lang.String" value="Input Value:"/>
+                              </Properties>
+                          </Component>
                       </Group>
                   </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0">
+                  <Properties>
+                      <Property name="text" type="java.lang.String" value="Letter Grade"/>
+                  </Properties>
+              </Component>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="output" min="-2" max="-2" attributes="0"/>
+              <Component id="output" min="-2" max="-2" attributes="0">
+                  <Properties>
+                      <Property name="text" type="java.lang.String" value="Output"/>
+                  </Properties>
+              </Component>
               <EmptySpace pref="48" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -77,12 +125,12 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Input Nilai :"/>
+        <Property name="text" type="java.lang.String" value="Input Value:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="inputAngka">
+    <Component class="javax.swing.JTextField" name="inputNumber">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="inputAngkaActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="inputNumberActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
@@ -104,7 +152,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Nilai Huruf"/>
+        <Property name="text" type="java.lang.String" value="Letter Grade"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="output">
@@ -116,7 +164,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Menghitung Nilai"/>
+        <Property name="text" type="java.lang.String" value="Calculate Grade"/>
       </Properties>
     </Component>
   </SubComponents>
