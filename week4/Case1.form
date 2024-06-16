@@ -76,7 +76,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Cowo Terganteng di ILKOM 22"/>
+        <Property name="text" type="java.lang.String" value="The Most Handsome Guy in ILKOM 22"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="choose1">
@@ -116,7 +116,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Proses"/>
+        <Property name="text" type="java.lang.String" value="Process"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
