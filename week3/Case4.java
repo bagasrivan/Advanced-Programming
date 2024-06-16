@@ -14,197 +14,131 @@ public class Case4 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        inputTahun = new javax.swing.JTextField();
-        inputBulan = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        yearLabel = new javax.swing.JLabel();
+        monthLabel = new javax.swing.JLabel();
+        yearInput = new javax.swing.JTextField();
+        monthInput = new javax.swing.JTextField();
+        processButton = new javax.swing.JButton();
         output = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        titleLabel = new javax.swing.JLabel();
+        resetButton = new javax.swing.JButton();
+        resultLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Input Tahun :");
+        yearLabel.setText("Input Year:");
 
-        jLabel2.setText("Input Bulan :");
+        monthLabel.setText("Input Month:");
 
-        inputTahun.addActionListener(new java.awt.event.ActionListener() {
+        yearInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inputTahunActionPerformed(evt);
+                yearInputActionPerformed(evt);
             }
         });
 
-        jButton1.setText("Proses");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        processButton.setText("Process");
+        processButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                processButtonActionPerformed(evt);
             }
         });
 
         output.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         output.setText(" ");
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Menghitung Hari");
+        titleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        titleLabel.setText("Calculate Days");
 
-        jButton2.setText("Reset");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        resetButton.setText("Reset");
+        resetButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                resetButtonActionPerformed(evt);
             }
         });
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Hasil");
+        resultLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        resultLabel.setText("Result");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(output, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(output, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(titleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(resultLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(inputTahun)
-                            .addComponent(inputBulan, javax.swing.GroupLayout.PREFERRED_SIZE, 88, Short.MAX_VALUE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
-                        .addComponent(jButton2)
-                        .addGap(81, 81, 81))))
-            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(yearLabel)
+                    .addComponent(monthLabel))
+                .addGap(34, 34, 34)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(yearInput)
+                    .addComponent(monthInput, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(139, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(processButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(resetButton)
+                .addGap(81, 81, 81))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3)
-                .addGap(22, 22, 22)
+                .addComponent(titleLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(inputTahun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                    .addComponent(yearLabel)
+                    .addComponent(yearInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(monthLabel)
+                    .addComponent(monthInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(43, 43, 43)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(inputBulan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                    .addComponent(processButton)
+                    .addComponent(resetButton))
                 .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(resultLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addComponent(output)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void inputTahunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputTahunActionPerformed
+    private void yearInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yearInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_inputTahunActionPerformed
+    }//GEN-LAST:event_yearInputActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int tahun = Integer.parseInt(inputTahun.getText());
-        String bulan = inputBulan.getText();
-
-        if (tahun % 4 == 0) {
-            switch (bulan) {
-                case "Januari":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-                case "Februari":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 29");
-                    break;
-                case "Maret":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-                case "April":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
-                    break;
-                case "Mei":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-                case "Juni":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
-                    break;
-                case "Juli":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-                case "Agustus":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-                case "September":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
-                    break;
-                case "Oktober":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-                case "November":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
-                    break;
-                case "Desember":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-            }
-        } else {
-            switch (bulan) {
-                case "Januari":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-                case "Februari":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 28");
-                    break;
-                case "Maret":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-                case "April":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
-                    break;
-                case "Mei":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-                case "Juni":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
-                    break;
-                case "Juli":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-                case "Agustus":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-                case "September":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
-                    break;
-                case "Oktober":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
-                case "November":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
-                    break;
-                case "Desember":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
-                    break;
+    private void processButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processButtonActionPerformed
+        // TODO add your handling code here:
+        int month = Integer.parseInt(monthInput.getText());
+        int year = Integer.parseInt(yearInput.getText());
+        int days = 0;
+        
+        if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+            days = 31;
+        } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+            days = 30;
+        } else if (month == 2) {
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+                days = 29; // Leap year
+            } else {
+                days = 28;
             }
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+        output.setText("Number of Days: " + days);
+    }//GEN-LAST:event_processButtonActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        inputTahun.setText("");
-        inputBulan.setText("");
-        output.setText("None");
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void resetButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetButtonActionPerformed
+        // TODO add your handling code here:
+        yearInput.setText("");
+        monthInput.setText("");
+        output.setText(" ");
+    }//GEN-LAST:event_resetButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -223,34 +157,33 @@ public class Case4 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Soal4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Soal4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Soal4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Soal4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Soal4().setVisible(true);
+                new Case4().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField inputBulan;
-    private javax.swing.JTextField inputTahun;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField monthInput;
+    private javax.swing.JLabel monthLabel;
     private javax.swing.JLabel output;
+    private javax.swing.JButton processButton;
+    private javax.swing.JButton resetButton;
+    private javax.swing.JLabel resultLabel;
+    private javax.swing.JLabel titleLabel;
+    private javax.swing.JTextField yearInput;
+    private javax.swing.JLabel yearLabel;
     // End of variables declaration//GEN-END:variables
 }
