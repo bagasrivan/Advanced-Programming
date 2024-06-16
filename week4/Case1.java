@@ -27,7 +27,7 @@ public class Case1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Cowo Terganteng di ILKOM 22");
+        jLabel1.setText("The Most Handsome Guy in ILKOM 22");
 
         buttonGroup1.add(choose1);
         choose1.setText("Zilo");
@@ -46,7 +46,7 @@ public class Case1 extends javax.swing.JFrame {
         buttonGroup1.add(choose4);
         choose4.setText("Rafif");
 
-        jButton1.setText("Proses");
+        jButton1.setText("Process");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -107,15 +107,15 @@ public class Case1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (choose1.isSelected()) {
-            output.setText("Jawaban Anda Salah, Cowo Terganteng Di ILKOM 22 Bukan " + choose1.getText() + " Tetapi " + choose3.getText());
+            output.setText("Your answer is wrong. The most handsome guy in ILKOM 22 is not " + choose1.getText() + ", but " + choose3.getText());
         } else if (choose2.isSelected()) {
-            output.setText("Jawaban Anda Salah, Cowo Terganteng Di ILKOM 22 Bukan " + choose2.getText() + " Tetapi " + choose3.getText());
+            output.setText("Your answer is wrong. The most handsome guy in ILKOM 22 is not " + choose2.getText() + ", but " + choose3.getText());
         } else if (choose3.isSelected()) {
-            output.setText("Benar!!, Cowo Terganteng Di ILKOM 22 Adalah " + choose3.getText());
+            output.setText("Correct!! The most handsome guy in ILKOM 22 is " + choose3.getText());
         } else if (choose4.isSelected()) {
-            output.setText("Jawaban Anda Salah, Cowo Terganteng Di ILKOM 22 Bukan " + choose4.getText() + " Tetapi " + choose3.getText());
+            output.setText("Your answer is wrong. The most handsome guy in ILKOM 22 is not " + choose4.getText() + ", but " + choose3.getText());
         } else {
-            output.setText("Harap Pilih Salah Satu Cowo Diatas");
+            output.setText("Please select one of the guys above.");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -136,20 +136,20 @@ public class Case1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Soal1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Soal1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Soal1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Soal1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Soal1().setVisible(true);
+                new Case1().setVisible(true);
             }
         });
     }
