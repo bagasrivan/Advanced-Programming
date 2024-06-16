@@ -4,8 +4,9 @@ import java.util.*;
 
 public class Case3 {
     public static void main(String[] args) {
-        long number;
         Scanner input = new Scanner(System.in);
+        long number;
+        
         System.out.print("Enter a Number = ");
         number = input.nextLong();
         System.out.print("Reversed Output = ");
