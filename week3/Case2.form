@@ -25,13 +25,29 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="output" alignment="1" max="32767" attributes="0"/>
           <Component id="status" alignment="1" max="32767" attributes="0"/>
-          <Component id="jLabel3" alignment="1" max="32767" attributes="0"/>
-          <Component id="jLabel2" alignment="1" max="32767" attributes="0"/>
+          <Component id="jLabel3" alignment="1" max="32767" attributes="0">
+              <Properties>
+                  <Property name="text" type="java.lang.String" value="Program GUI Addition &amp; Subtraction"/>
+              </Properties>
+          </Component>
+          <Component id="jLabel2" alignment="1" max="32767" attributes="0">
+              <Properties>
+                  <Property name="text" type="java.lang.String" value="Status"/>
+              </Properties>
+          </Component>
           <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0">
+                      <Properties>
+                          <Property name="text" type="java.lang.String" value="Input Number:"/>
+                      </Properties>
+                  </Component>
+                  <Component id="jButton2" min="-2" max="-2" attributes="0">
+                      <Properties>
+                          <Property name="text" type="java.lang.String" value="Add"/>
+                      </Properties>
+                  </Component>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
@@ -40,9 +56,17 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0">
+                          <Properties>
+                              <Property name="text" type="java.lang.String" value="Reset"/>
+                          </Properties>
+                      </Component>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton3" min="-2" max="-2" attributes="0">
+                          <Properties>
+                              <Property name="text" type="java.lang.String" value="Subtract"/>
+                          </Properties>
+                      </Component>
                   </Group>
               </Group>
               <EmptySpace pref="134" max="32767" attributes="0"/>
@@ -53,24 +77,52 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+              <Component id="jLabel3" min="-2" max="-2" attributes="0">
+                  <Properties>
+                      <Property name="text" type="java.lang.String" value="Program GUI Addition &amp; Subtraction"/>
+                  </Properties>
+              </Component>
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="input" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0">
+                      <Properties>
+                          <Property name="text" type="java.lang.String" value="Input Number:"/>
+                      </Properties>
+                  </Component>
               </Group>
               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0">
+                      <Properties>
+                          <Property name="text" type="java.lang.String" value="Add"/>
+                      </Properties>
+                  </Component>
+                  <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0">
+                      <Properties>
+                          <Property name="text" type="java.lang.String" value="Subtract"/>
+                      </Properties>
+                  </Component>
+                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0">
+                      <Properties>
+                          <Property name="text" type="java.lang.String" value="Reset"/>
+                      </Properties>
+                  </Component>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="output" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0">
+                  <Properties>
+                      <Property name="text" type="java.lang.String" value="Status"/>
+                  </Properties>
+              </Component>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="status" min="-2" max="-2" attributes="0"/>
+              <Component id="status" min="-2" max="-2" attributes="0">
+                  <Properties>
+                      <Property name="text" type="java.lang.String" value=" "/>
+                  </Properties>
+              </Component>
               <EmptySpace pref="45" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -82,9 +134,9 @@
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="ff" red="33" type="rgb"/>
+          <Color blue="33" green="255" red="33" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Tambah"/>
+        <Property name="text" type="java.lang.String" value="Add"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
@@ -93,9 +145,9 @@
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="ff" red="ff" type="rgb"/>
+          <Color blue="255" green="102" red="255" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Kurang"/>
+        <Property name="text" type="java.lang.String" value="Subtract"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
@@ -113,13 +165,13 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Input Angka :"/>
+        <Property name="text" type="java.lang.String" value="Input Number:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="0" red="ff" type="rgb"/>
+          <Color blue="0" green="0" red="255" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Reset"/>
       </Properties>
@@ -142,7 +194,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Program GUI Penjumlahan &amp; Pengurangan"/>
+        <Property name="text" type="java.lang.String" value="Program GUI Addition &amp; Subtraction"/>
       </Properties>
     </Component>
   </SubComponents>
