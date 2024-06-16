@@ -84,7 +84,7 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="ff" red="33" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Tambah"/>
+        <Property name="text" type="java.lang.String" value="Add"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
@@ -95,7 +95,7 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Kurang"/>
+        <Property name="text" type="java.lang.String" value="Subtract"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
@@ -113,7 +113,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Input Angka :"/>
+        <Property name="text" type="java.lang.String" value="Input Number:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton3">
@@ -142,7 +142,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Program GUI Penjumlahan &amp; Pengurangan"/>
+        <Property name="text" type="java.lang.String" value="Addition & Subtraction GUI Program"/>
       </Properties>
     </Component>
   </SubComponents>
