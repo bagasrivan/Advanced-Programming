@@ -1,4 +1,4 @@
-package ;
+package week3;
 
 public class Case4 extends javax.swing.JFrame {
     public Case4() {
