@@ -1,53 +1,46 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package praktikum5;
+package week5;
 
 import java.util.*;
 
-/**
- *
- * @author Bagaskara
- */
-public class Soal3 {
-
+public class Case3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int plus, minus, choose, length, hasil;
-        System.out.println("Selamat Datang Pada Program Tambah dan Kurang Array");
-        System.out.println("Menu : \n1.Tambah \n2.Kurang");
-        System.out.print("Silahkan Masukan Pilihan Anda = ");
+        int plus, minus, choose, length, result;
+        
+        System.out.println("Welcome to Array Addition and Subtraction Program");
+        
+        System.out.println("Menu: \n1. Addition \n2. Subtraction");
+        System.out.print("Please enter your choice = ");
         choose = input.nextInt();
 
-        System.out.print("Masukan Panjang Array = ");
+        System.out.print("Enter the length of the array = ");
         length = input.nextInt();
 
         int arrayA[] = new int[length];
 
         for (int i = 0; i < arrayA.length; i++) {
-            System.out.print("Masukan Array A ke- " + i + " = ");
+            System.out.print("Enter Array A element " + i + " = ");
             arrayA[i] = input.nextInt();
         }
         System.out.println("=========");
         int arrayB[] = new int[length];
 
         for (int j = 0; j < arrayB.length; j++) {
-            System.out.print("Masukan Array B ke- " + j + " = ");
+            System.out.print("Enter Array B element " + j + " = ");
             arrayB[j] = input.nextInt();
         }
 
         if (choose == 1) {
             System.out.println("=======");
             for (int i = 0; i < arrayA.length; i++) {
-                hasil = arrayA[i] + arrayB[i];
-                System.out.println("Hasil Array ke- " + i + " = " + hasil);
+                result = arrayA[i] + arrayB[i];
+                System.out.println("Result of Array element " + i + " = " + result);
             }
         } else if (choose == 2) {
             System.out.println("=======");
             for (int i = 0; i < arrayA.length; i++) {
-                hasil = arrayA[i] - arrayB[i];
-                System.out.println("Hasil Array ke- " + i + " = " + hasil);
+                result = arrayA[i] - arrayB[i];
+                System.out.println("Result of Array element " + i + " = " + result);
             }
         }
     }
