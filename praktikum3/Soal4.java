@@ -1,20 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package praktikum3;
 
-/**
- *
- * @author Bagaskara
- */
-public class Soal4 extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Soal4new
-     */
-    public Soal4() {
+public class Case4 extends javax.swing.JFrame {
+    public Case4() {
         initComponents();
     }
 
@@ -29,8 +16,8 @@ public class Soal4 extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        inputTahun = new javax.swing.JTextField();
-        inputBulan = new javax.swing.JTextField();
+        inputYear = new javax.swing.JTextField();
+        inputMonth = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         output = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -39,17 +26,17 @@ public class Soal4 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Input Tahun :");
+        jLabel1.setText("Input Year:");
 
-        jLabel2.setText("Input Bulan :");
+        jLabel2.setText("Input Month:");
 
-        inputTahun.addActionListener(new java.awt.event.ActionListener() {
+        inputYear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inputTahunActionPerformed(evt);
+                inputYearActionPerformed(evt);
             }
         });
 
-        jButton1.setText("Proses");
+        jButton1.setText("Process");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -60,7 +47,7 @@ public class Soal4 extends javax.swing.JFrame {
         output.setText(" ");
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Menghitung Hari");
+        jLabel3.setText("Calculate Days");
 
         jButton2.setText("Reset");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -70,7 +57,7 @@ public class Soal4 extends javax.swing.JFrame {
         });
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Hasil");
+        jLabel4.setText("Result");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -87,8 +74,8 @@ public class Soal4 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(61, 61, 61)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(inputTahun)
-                            .addComponent(inputBulan, javax.swing.GroupLayout.PREFERRED_SIZE, 88, Short.MAX_VALUE))
+                            .addComponent(inputYear)
+                            .addComponent(inputMonth, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
@@ -104,11 +91,11 @@ public class Soal4 extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(inputTahun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(inputYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
                 .addGap(43, 43, 43)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(inputBulan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(inputMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -124,98 +111,98 @@ public class Soal4 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void inputTahunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputTahunActionPerformed
+    private void inputYearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputYearActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_inputTahunActionPerformed
+    }//GEN-LAST:event_inputYearActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int tahun = Integer.parseInt(inputTahun.getText());
-        String bulan = inputBulan.getText();
+        int year = Integer.parseInt(inputYear.getText());
+        String month = inputMonth.getText();
 
-        if (tahun % 4 == 0) {
-            switch (bulan) {
-                case "Januari":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+        if (year % 4 == 0) {
+            switch (month) {
+                case "January":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
-                case "Februari":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 29");
+                case "February":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 29");
                     break;
-                case "Maret":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+                case "March":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
                 case "April":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 30");
                     break;
-                case "Mei":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+                case "May":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
-                case "Juni":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
+                case "June":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 30");
                     break;
-                case "Juli":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+                case "July":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
-                case "Agustus":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+                case "August":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
                 case "September":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 30");
                     break;
-                case "Oktober":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+                case "October":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
                 case "November":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 30");
                     break;
-                case "Desember":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+                case "December":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
             }
         } else {
-            switch (bulan) {
-                case "Januari":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+            switch (month) {
+                case "January":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
-                case "Februari":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 28");
+                case "February":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 28");
                     break;
-                case "Maret":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+                case "March":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
                 case "April":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 30");
                     break;
-                case "Mei":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+                case "May":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
-                case "Juni":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
+                case "June":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 30");
                     break;
-                case "Juli":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+                case "July":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
-                case "Agustus":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+                case "August":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
                 case "September":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 30");
                     break;
-                case "Oktober":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+                case "October":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
                 case "November":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 30");
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 30");
                     break;
-                case "Desember":
-                    output.setText("Jumlah Hari Tahun " + tahun + " Pada Bulan " + bulan + " Adalah 31");
+                case "December":
+                    output.setText("Number of Days in Year " + year + " for " + month + " is 31");
                     break;
             }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        inputTahun.setText("");
-        inputBulan.setText("");
+        inputYear.setText("");
+        inputMonth.setText("");
         output.setText("None");
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -236,13 +223,13 @@ public class Soal4 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Soal4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Soal4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Soal4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Soal4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -250,20 +237,20 @@ public class Soal4 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Soal4().setVisible(true);
+                new Case4().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField inputBulan;
-    private javax.swing.JTextField inputTahun;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField inputMonth;
+    private javax.swing.JTextField inputYear;
     private javax.swing.JLabel output;
     // End of variables declaration//GEN-END:variables
 }
