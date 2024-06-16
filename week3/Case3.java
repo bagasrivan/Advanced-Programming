@@ -15,7 +15,7 @@ public class Case3 extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        inputAngka = new javax.swing.JTextField();
+        inputNumber = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -24,11 +24,11 @@ public class Case3 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Input Nilai :");
+        jLabel1.setText("Enter Value:");
 
-        inputAngka.addActionListener(new java.awt.event.ActionListener() {
+        inputNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inputAngkaActionPerformed(evt);
+                inputNumberActionPerformed(evt);
             }
         });
 
@@ -47,13 +47,13 @@ public class Case3 extends javax.swing.JFrame {
         });
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Nilai Huruf");
+        jLabel2.setText("Letter Grade");
 
         output.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         output.setText("Output");
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Menghitung Nilai");
+        jLabel3.setText("Grade Calculator");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -69,7 +69,7 @@ public class Case3 extends javax.swing.JFrame {
                         .addGap(69, 69, 69)
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
-                        .addComponent(inputAngka, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(inputNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                         .addComponent(jButton1)))
                 .addContainerGap())
@@ -90,7 +90,7 @@ public class Case3 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(57, 57, 57)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(inputAngka, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(inputNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1))))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
@@ -102,40 +102,40 @@ public class Case3 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void inputAngkaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputAngkaActionPerformed
+    private void inputNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputNumberActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_inputAngkaActionPerformed
+    }//GEN-LAST:event_inputNumberActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int nilai = Integer.parseInt(inputAngka.getText());
+        int value = Integer.parseInt(inputNumber.getText());
 
-        if (nilai <= 100 && nilai >= 80) {
+        if (value <= 100 && value >= 80) {
             output.setText("A");
-        } else if (nilai <= 79 && nilai >= 77) {
+        } else if (value <= 79 && value >= 77) {
             output.setText("A-");
-        } else if (nilai <= 76 && nilai >= 75) {
+        } else if (value <= 76 && value >= 75) {
             output.setText("B+");
-        } else if (nilai <= 74 && nilai >= 70) {
+        } else if (value <= 74 && value >= 70) {
             output.setText("B");
-        } else if (nilai <= 69 && nilai >= 67) {
+        } else if (value <= 69 && value >= 67) {
             output.setText("B-");
-        } else if (nilai <= 66 && nilai >= 64) {
+        } else if (value <= 66 && value >= 64) {
             output.setText("C+");
-        } else if (nilai <= 63 && nilai >= 60) {
+        } else if (value <= 63 && value >= 60) {
             output.setText("C");
-        } else if (nilai <= 59 && nilai >= 50) {
+        } else if (value <= 59 && value >= 50) {
             output.setText("D+");
-        } else if (nilai <= 49 && nilai >= 40) {
+        } else if (value <= 49 && value >= 40) {
             output.setText("D");
-        } else if (nilai <= 39 && nilai >= 0) {
+        } else if (value <= 39 && value >= 0) {
             output.setText("E");
         } else {
-            output.setText("Nilai Tidak Memenuhi Aturan");
+            output.setText("Value Out of Range");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        inputAngka.setText("");
+        inputNumber.setText("");
         output.setText("-");
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -156,26 +156,26 @@ public class Case3 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Soal3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Soal3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Soal3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Soal3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Case3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Soal3().setVisible(true);
+                new Case3().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField inputAngka;
+    private javax.swing.JTextField inputNumber;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
