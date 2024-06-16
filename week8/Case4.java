@@ -1,31 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package praktikum8;
+package week8;
 
 import java.util.*;
 
-/**
- *
- * @author Bagaskara
- */
-public class Soal4 {
-
+public class Case4 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        String toString, search;
+        String inputString, search;
 
-        System.out.print("Masukan Input = ");
-        toString = input.nextLine();
+        System.out.print("Enter Input = ");
+        inputString = input.nextLine();
 
-        System.out.print("Masukan Angka Atau Huruf Yang Dicari = ");
+        System.out.print("Enter Number or Letter to Search = ");
         search = input.next();
 
-        toString = toString.toUpperCase();
+        inputString = inputString.toUpperCase();
         search = search.toUpperCase();
 
-        String[] array = toString.split(" ");
+        String[] array = inputString.split(" ");
 
         sort(array);
 
@@ -35,9 +26,9 @@ public class Soal4 {
         int index = search(array, search);
 
         if (index != -1) {
-            System.out.println(search + " Ditemukan Pada Index " + index + " Dalam Array");
+            System.out.println(search + " Found at Index " + index + " in the Array");
         } else {
-            System.out.println(search + " Tidak Ditemukan Dalam Array");
+            System.out.println(search + " Not Found in the Array");
         }
     }
 
@@ -46,9 +37,9 @@ public class Soal4 {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 if (array[j].compareTo(array[j + 1]) > 0) {
-                    String temporarry = array[j];
+                    String temporary = array[j];
                     array[j] = array[j + 1];
-                    array[j + 1] = temporarry;
+                    array[j + 1] = temporary;
                 }
             }
         }
