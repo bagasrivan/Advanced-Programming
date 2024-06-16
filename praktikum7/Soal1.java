@@ -1,45 +1,35 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package praktikum7;
+package week7;
 
 import java.util.*;
 
-/**
- *
- * @author Bagaskara
- */
-public class Soal1 {
-
-    static int baris;
+public class Case1 {
+    
+    static int rows;
 
     public static void main(String[] args) {
-        Scanner user = new Scanner(System.in);
-        System.out.print("Masukkan Jumlah Baris = ");
-        baris = user.nextInt();
+        Scanner userInput = new Scanner(System.in);
+        System.out.print("Enter Number of Rows = ");
+        rows = userInput.nextInt();
 
-        print(baris, 0);
+        printPattern(rows, 0);
     }
 
-    public static void print(int n, int spasi) {
+    public static void printPattern(int n, int spaces) {
         if (n <= 0) {
             return;
         }
-        for (int i = 0; i < spasi; i++) {
+        for (int i = 0; i < spaces; i++) {
             System.out.print(" ");
-
         }
-        print1(n);
-        print(n - 1, spasi + 1);
-
+        printStars(n);
+        printPattern(n - 1, spaces + 1);
     }
 
-    public static void print1(int n2) {
-        if (n2 <= 0) {
+    public static void printStars(int n) {
+        if (n <= 0) {
             return;
         }
-        for (int i = 0; i < n2; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.print("*");
         }
         System.out.println("");
