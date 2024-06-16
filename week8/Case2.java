@@ -1,50 +1,41 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package praktikum8;
+package week8;
 
 import java.util.*;
 
-/**
- *
- * @author Bagaskara
- */
-public class Soal2 {
-
+public class Case2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Masukan Input = ");
-        String inputS = input.nextLine().replaceAll("\\s+", "");
+        System.out.print("Enter Input = ");
+        String inputStr = input.nextLine().replaceAll("\\s+", "");
 
-        ArrayList<Character> inputan = new ArrayList<>();
-        for (char c : inputS.toCharArray()) {
-            inputan.add(c);
+        ArrayList<Character> inputList = new ArrayList<>();
+        for (char c : inputStr.toCharArray()) {
+            inputList.add(c);
         }
 
-        int n = inputan.size();
+        int n = inputList.size();
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
-                char a = inputan.get(j);
-                char b = inputan.get(j + 1);
-                char c;
-                if (sort(a, b) > 0) {
-                    c = a;
-                    inputan.set(j, b);
-                    inputan.set(j + 1, c);
+                char first = inputList.get(j);
+                char second = inputList.get(j + 1);
+                char temp;
+                if (compareChars(first, second) > 0) {
+                    temp = first;
+                    inputList.set(j, second);
+                    inputList.set(j + 1, temp);
                 }
             }
         }
 
-        System.out.println("Output After Sort = ");
-        for (char d : inputan) {
-            System.out.print(d);
+        System.out.println("Output After Sorting = ");
+        for (char ch : inputList) {
+            System.out.print(ch);
         }
 
     }
 
-    public static int sort(char a, char b) {
+    public static int compareChars(char a, char b) {
         if (Character.isUpperCase(a) && Character.isUpperCase(b)) {
             return a - b;
         } else if (Character.isLowerCase(a) && Character.isLowerCase(b)) {
