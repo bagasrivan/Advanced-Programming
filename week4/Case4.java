@@ -1,19 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-package praktikum4;
+package week4;
 
-/**
- *
- * @author Bagaskara
- */
-public class Soal4 extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Soal4
-     */
-    public Soal4() {
+public class Case4 extends javax.swing.JFrame {
+    public Case4() {
         initComponents();
     }
 
