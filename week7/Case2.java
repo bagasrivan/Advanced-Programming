@@ -1,38 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package praktikum7;
+package week7;
 
 import java.util.*;
 
-/**
- *
- * @author Bagaskara
- */
-public class Soal2 {
-
+public class Case2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int a, b, loop = 0;
+        
         do {
-            System.out.print("Masukan A = ");
+            System.out.print("Enter A = ");
             a = input.nextInt();
-            System.out.print("Masukan B = ");
+            System.out.print("Enter B = ");
             b = input.nextInt();
             if (a == 0 && b == 0) {
-                System.out.println("Kedua Bilangan Tidak Boleh Nol");
+                System.out.println("Both Numbers Cannot Be Zero");
             } else if (a < 0 || b < 0) {
-                System.out.println("Kedua Bilangan Harus Positif");
+                System.out.println("Both Numbers Must Be Positive");
             } else {
-                int hasilFpb = fpb(a, b);
-                System.out.println("FPB Dari " + a + " dan " + b + " Adalah = " + hasilFpb);
+                int gcdResult = gcd(a, b);
+                System.out.println("GCD of " + a + " and " + b + " is = " + gcdResult);
                 loop++;
             }
         } while (loop == 0);
     }
 
-    public static int fpb(int a, int b) {
+    public static int gcd(int a, int b) {
         if (a == 0) {
             return b;
         } else if (b == 0) {
@@ -42,13 +34,13 @@ public class Soal2 {
                 if (a % b == 0) {
                     return b;
                 } else {
-                    return fpb(b, a % b);
+                    return gcd(b, a % b);
                 }
             } else {
                 if (b % a == 0) {
                     return a;
                 } else {
-                    return fpb(a, b % a);
+                    return gcd(a, b % a);
                 }
             }
         }
