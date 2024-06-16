@@ -1,33 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package praktikum8;
+package week8;
 
 import java.util.*;
 
-/**
- *
- * @author Bagaskara
- */
-public class Soal3 {
-
+public class Case3 {
     public static void main(String[] args) {
-        Scanner masuk = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         boolean check = false;
         boolean end = false;
 
-        System.out.print("Masukan Angka = ");
-        String input = masuk.nextLine();
+        System.out.print("Enter Numbers = ");
+        String inputStr = input.nextLine();
 
-        String baru = input.replaceAll("\\s+", " ").trim();
+        String cleanedInput = inputStr.replaceAll("\\s+", " ").trim();
 
-        String[] array = baru.split(" ");
+        String[] array = cleanedInput.split(" ");
 
         System.out.println();
 
-        System.out.print("Masukan Angka/Huruf Yang Ingin Dicari Indexnya = ");
-        String search = masuk.nextLine();
+        System.out.print("Enter Number/Letter to Search Index = ");
+        String search = input.nextLine();
         
         int[] data = new int[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -37,22 +28,22 @@ public class Soal3 {
 
         System.out.println();
 
-        System.out.print("Angka Sesudah Di Sort = ");
-        cetak(array.length, search, data, array, check, end);
+        System.out.print("Numbers After Sorting = ");
+        printSorted(array.length, search, data, array, check, end);
         System.out.println();
     }
 
-    public static void cetak(int n, String search, int[] data, String[] arr, boolean check, boolean end) {
-        int b = 0;
+    public static void printSorted(int n, String search, int[] data, String[] arr, boolean check, boolean end) {
+        int index = 0;
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 if (data[j] > data[j + 1]) {
                     int temp = data[j];
                     data[j] = data[j + 1];
                     data[j + 1] = temp;
-                    String s = arr[j];
+                    String tempStr = arr[j];
                     arr[j] = arr[j + 1];
-                    arr[j + 1] = s;
+                    arr[j + 1] = tempStr;
                 }
             }
         }
@@ -72,20 +63,20 @@ public class Soal3 {
         }
         
         if (end) {
-            System.out.println("\n" + search + " Tidak Ditemukan Dalam Array");
+            System.out.println("\n" + search + " Not Found in the Array");
             return; 
         }
         
         for (int j = 0; j < n; j++) {
             if (search.equals(arr[j])) {
                 check = true;
-                b = j;
+                index = j;
                 break;
             }
         }
         
         if (check) {
-            System.out.println("\n" + search + " Ditemukan Pada Indeks " + b + " Dalam Array");
+            System.out.println("\n" + search + " Found at Index " + index + " in the Array");
             return;
         }
     }
