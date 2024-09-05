@@ -1,13 +1,13 @@
-package UTPPractice;
+package middleproject;
 
 import javax.swing.JOptionPane;
 
-public class UTPPractice extends javax.swing.JFrame {
+public class middleproject extends javax.swing.JFrame {
 
     /**
      * Creates new form UTPPractice
      */
-    public UTPPractice() {
+    public middleproject() {
         initComponents();
         this.setExtendedState(UTPPractice.MAXIMIZED_BOTH);
     }
