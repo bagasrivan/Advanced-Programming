@@ -2,12 +2,12 @@ package middleproject;
 
 import javax.swing.JOptionPane;
 
-public class middleproject extends javax.swing.JFrame {
+public class main extends javax.swing.JFrame {
 
     /**
      * Creates new form UTPPractice
      */
-    public middleproject() {
+    public main() {
         initComponents();
         this.setExtendedState(UTPPractice.MAXIMIZED_BOTH);
     }
