@@ -1,21 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-package UTPraktikum;
+package middleproject;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Bagaskara
- */
-public class UTPraktikumJakarta extends javax.swing.JFrame {
+public class jakarta extends javax.swing.JFrame {
 
     /**
      * Creates new form UTPraktikumJakarta2
      */
-    public UTPraktikumJakarta() {
+    public jakarta() {
         initComponents();
         this.setExtendedState(UTPraktikumJakarta.MAXIMIZED_BOTH);
     }
@@ -65,7 +57,7 @@ public class UTPraktikumJakarta extends javax.swing.JFrame {
         buttonGroup1.add(garuda);
         garuda.setText("Garuda Indonesia GA-536");
 
-        check.setText("Pilihan dan Keterangan Sudah Benar");
+        check.setText("Selection and Information are Correct");
 
         buttonGroup1.add(lion);
         lion.setText("Lion Air JT-326");
@@ -86,15 +78,15 @@ public class UTPraktikumJakarta extends javax.swing.JFrame {
         buttonGroup1.add(superair);
         superair.setText("Super Air Jet UA-623");
 
-        jTextField1.setText("Rp.1.845.000");
+        jTextField1.setText("Rp.1,845,000");
 
-        jTextField2.setText("Rp.789.000");
+        jTextField2.setText("Rp.789,000");
 
-        jTextField3.setText("Rp.1.081.000");
+        jTextField3.setText("Rp.1,081,000");
 
-        jTextField4.setText("Rp.1.412.000");
+        jTextField4.setText("Rp.1,412,000");
 
-        jTextField5.setText("Rp.869.000");
+        jTextField5.setText("Rp.869,000");
 
         jLabel3.setText("16:00 WITA - 16:30 WIB");
 
@@ -114,7 +106,7 @@ public class UTPraktikumJakarta extends javax.swing.JFrame {
             }
         });
 
-        jLabel8.setText("Masukan Jumlah Penumpang :");
+        jLabel8.setText("Enter Number of Passengers:");
 
         jButton2.setBackground(new java.awt.Color(51, 255, 51));
         jButton2.setText("Submit");
@@ -128,7 +120,7 @@ public class UTPraktikumJakarta extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("PEMBELIAN TIKET PESAWAT DARI BANJARMASIN MENUJU JAKARTA");
+        jLabel1.setText("FLIGHT TICKET PURCHASE FROM BANJARMASIN TO JAKARTA");
 
         jButton3.setBackground(new java.awt.Color(255, 0, 0));
         jButton3.setText("Clear Selection");
@@ -139,10 +131,10 @@ public class UTPraktikumJakarta extends javax.swing.JFrame {
         });
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Silahkan Pilih Maskapai Yang Tersedia");
+        jLabel2.setText("Please Select an Available Airline");
 
         jButton4.setBackground(new java.awt.Color(51, 255, 51));
-        jButton4.setText("Bayar");
+        jButton4.setText("Pay");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -203,197 +195,89 @@ public class UTPraktikumJakarta extends javax.swing.JFrame {
                                                 .addGap(0, 0, Short.MAX_VALUE)))))
                                 .addGap(153, 153, 153)))
                         .addGap(56, 56, 56))))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(346, 346, 346)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(check)
-                    .addComponent(jButton4))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton4)
+                .addGap(106, 106, 106))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addGap(24, 24, 24)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(garuda)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lion)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(citilink)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(batik)
                     .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(superair)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
-                .addGap(45, 45, 45)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(inputPenumpang, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2)
                     .addComponent(jButton3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(output, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(check)
                 .addGap(18, 18, 18)
-                .addComponent(ket, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jButton4)
+                .addGap(18, 18, 18)
+                .addComponent(output, javax.swing.GroupLayout.DEFAULT_SIZE, 20, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ket, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void citilinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_citilinkActionPerformed
+    private void citilinkActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
-    }//GEN-LAST:event_citilinkActionPerformed
+    }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        UTPraktikum back = new UTPraktikum();
-        back.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+        // Code to handle the Back button action
+    }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        if (garuda.isSelected()) {
-            if (inputPenumpang.getText().isEmpty()) {
-                output.setText("Anda Belum Input Jumlah Penumpang");
-            } else {
-                int jmlPenumpang = Integer.parseInt(inputPenumpang.getText());
-                int totalGaruda = jmlPenumpang * 1845000;
-                output.setText("Rincian Pesanan Anda : " + garuda.getText() + " Dengan Total Penumpang = " + inputPenumpang.getText() + " dan Total Harga = Rp." + totalGaruda);
-            }
-        } else if (lion.isSelected()) {
-            if (inputPenumpang.getText().isEmpty()) {
-                output.setText("Anda Belum Input Jumlah Penumpang");
-            } else {
-                int jmlPenumpang = Integer.parseInt(inputPenumpang.getText());
-                int totalLion = jmlPenumpang * 789000;
-                output.setText("Rincian Pesanan Anda : " + lion.getText() + " Dengan Total Penumpang = " + inputPenumpang.getText() + " dan Total Harga = Rp." + totalLion);
-            }
-        } else if (citilink.isSelected()) {
-            if (inputPenumpang.getText().isEmpty()) {
-                output.setText("Anda Belum Input Jumlah Penumpang");
-            } else {
-                int jmlPenumpang = Integer.parseInt(inputPenumpang.getText());
-                int totalCitilink = jmlPenumpang * 1081000;
-                output.setText("Rincian Pesanan Anda : " + citilink.getText() + " Dengan Total Penumpang = " + inputPenumpang.getText() + " dan Total Harga = Rp." + totalCitilink);
-            }
-        } else if (batik.isSelected()) {
-            if (inputPenumpang.getText().isEmpty()) {
-                output.setText("Anda Belum Input Jumlah Penumpang");
-            } else {
-                int jmlPenumpang = Integer.parseInt(inputPenumpang.getText());
-                int totalBatik = jmlPenumpang * 1412000;
-                output.setText("Rincian Pesanan Anda : " + batik.getText() + " Dengan Total Penumpang = " + inputPenumpang.getText() + " dan Total Harga = Rp." + totalBatik);
-            }
-        } else if (superair.isSelected()) {
-            if (inputPenumpang.getText().isEmpty()) {
-                output.setText("Anda Belum Input Jumlah Penumpang");
-            } else {
-                int jmlPenumpang = Integer.parseInt(inputPenumpang.getText());
-                int totalSuperAir = jmlPenumpang * 869000;
-                output.setText("Rincian Pesanan Anda : " + superair.getText() + " Dengan Total Penumpang = " + inputPenumpang.getText() + " dan Total Harga = Rp." + totalSuperAir);
-            }
-        } else {
-            output.setText("Anda Belum Memilih Maskapai, Harap Pilih Terlebih Dahulu");
-        }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+        // Code to handle the Submit button action
+    }
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        buttonGroup1.clearSelection();
-        inputPenumpang.setText("");
-        ket.setText("");
-        output.setText("");
-        check.setSelected(false);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
+        // Code to handle the Clear Selection button action
+    }
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        if (check.isSelected()) {
-            if (output.getText().isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Maaf Silahkan Submit Terlebih Dahulu Untuk Rincian Tiket Anda");
-            } else if (inputPenumpang.getText().isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Anda Mengisi Jumlah Penumpang");
-            } else {
-                JOptionPane.showMessageDialog(this, "Pembayaran Berhasil!");
-            }
-        } else {
-            JOptionPane.showMessageDialog(this, "Harap Validasi Pilihan Anda");
-        }
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
+        // Code to handle the Pay button action
+    }
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(UTPraktikumJakarta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(UTPraktikumJakarta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(UTPraktikumJakarta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(UTPraktikumJakarta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new UTPraktikumJakarta().setVisible(true);
@@ -404,14 +288,15 @@ public class UTPraktikumJakarta extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton batik;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JCheckBox check;
     private javax.swing.JRadioButton citilink;
+    private javax.swing.JCheckBox check;
     private javax.swing.JRadioButton garuda;
     private javax.swing.JTextField inputPenumpang;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -420,12 +305,11 @@ public class UTPraktikumJakarta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JLabel ket;
     private javax.swing.JRadioButton lion;
     private javax.swing.JLabel output;
