@@ -1,13 +1,13 @@
-package UTPraktikum;
+package middleproject;
 
 import javax.swing.JOptionPane;
 
-public class FlightBookingApp extends javax.swing.JFrame {
+public class bali extends javax.swing.JFrame {
 
     /**
      * Creates new form FlightBookingApp
      */
-    public FlightBookingApp() {
+    public bali() {
         initComponents();
         this.setExtendedState(FlightBookingApp.MAXIMIZED_BOTH);
     }
