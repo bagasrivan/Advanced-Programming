@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class surabaya extends javax.swing.JFrame {
 
     /**
-     * Creates new form UTPraktikumSurabaya2
+     * Creates new form surabaya
      */
     public surabaya() {
         initComponents();
