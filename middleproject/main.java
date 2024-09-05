@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class main extends javax.swing.JFrame {
 
     /**
-     * Creates new form UTPPractice
+     * Creates new form main
      */
     public main() {
         initComponents();
