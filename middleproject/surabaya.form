@@ -145,207 +145,121 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="superair" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="inputPenumpang" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="output" min="-2" pref="31" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="jButton4" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="check" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                  <Component id="ket" min="-2" pref="32" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="output" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
+
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="jTextField3">
+        <Component class="javax.swing.JLabel" name="jLabel1" id="jLabel1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Rp.988.000"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField3ActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="output">
-          <Properties>
+            <Property name="text" type="java.lang.String" value="Label 1"/>
             <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="verticalAlignment" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField4">
+        <Component class="javax.swing.JLabel" name="jLabel2" id="jLabel2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Rp.1.012.000"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="24" style="0"/>
-            </Property>
+            <Property name="text" type="java.lang.String" value="Label 2"/>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="PEMBELIAN TIKET PESAWAT DARI BANJARMASIN MENUJU SURABAYA"/>
+            <Property name="verticalAlignment" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField5">
+        <Component class="javax.swing.JButton" name="jButton1" id="jButton1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="RP.750.000"/>
+            <Property name="text" type="java.lang.String" value="Button 1"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton3">
+        <Component class="javax.swing.JButton" name="jButton2" id="jButton2">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Clear Selection"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel4">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="08:00 WITA - 08:05 WIB"/>
+            <Property name="text" type="java.lang.String" value="Button 2"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel2">
+        <Component class="javax.swing.JButton" name="jButton3" id="jButton3">
           <Properties>
+            <Property name="text" type="java.lang.String" value="Button 3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton4" id="jButton4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Button 4"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField2" id="jTextField2"/>
+        <Component class="javax.swing.JTextField" name="jTextField3" id="jTextField3"/>
+        <Component class="javax.swing.JTextField" name="jTextField4" id="jTextField4"/>
+        <Component class="javax.swing.JTextField" name="jTextField5" id="jTextField5"/>
+        <Component class="javax.swing.JLabel" name="jLabel4" id="jLabel4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Label 4"/>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Silahkan Pilih Maskapai Yang Tersedia"/>
+            <Property name="verticalAlignment" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="check">
+        <Component class="javax.swing.JLabel" name="jLabel5" id="jLabel5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Pilihan dan Keterangan Sudah Benar"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel5">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="09:30 WITA - 09:40 WIB"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="lion">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="buttonGroup1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Lion Air JT-321"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lionActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel6">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="14:30 WITA - 14:35 WIB"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="ket">
-          <Properties>
+            <Property name="text" type="java.lang.String" value="Label 5"/>
             <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="verticalAlignment" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
+        <Component class="javax.swing.JLabel" name="jLabel6" id="jLabel6">
           <Properties>
-            <Property name="text" type="java.lang.String" value="06:00 WITA - 06:05 WIB"/>
+            <Property name="text" type="java.lang.String" value="Label 6"/>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="verticalAlignment" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="citilink">
+        <Component class="javax.swing.JLabel" name="jLabel7" id="jLabel7">
           <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="buttonGroup1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Citilink QG-485"/>
+            <Property name="text" type="java.lang.String" value="Label 7"/>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="verticalAlignment" type="int" value="0"/>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="citilinkActionPerformed"/>
-          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JLabel" name="jLabel8" id="jLabel8">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Back"/>
+            <Property name="text" type="java.lang.String" value="Label 8"/>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="verticalAlignment" type="int" value="0"/>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
-          </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="batik">
+        <Component class="javax.swing.JTextField" name="output" id="output"/>
+        <Component class="javax.swing.JLabel" name="ket" id="ket">
           <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="buttonGroup1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Batik Air ID-6218"/>
+            <Property name="text" type="java.lang.String" value="Keterangan"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel8">
+        <Component class="javax.swing.JCheckBox" name="check" id="check">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Masukan Jumlah Penumpang :"/>
+            <Property name="text" type="java.lang.String" value="Check"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="superair">
+        <Component class="javax.swing.JLabel" name="inputPenumpang" id="inputPenumpang">
           <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="buttonGroup1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Super Air Jet UA-627"/>
+            <Property name="text" type="java.lang.String" value="Input Penumpang"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="inputPenumpang">
-        </Component>
-        <Component class="javax.swing.JTextField" name="jTextField2">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Rp.789.000"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="ff" red="33" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Submit"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="jButton4">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="ff" red="33" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Bayar"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
-          </Events>
-        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField2" id="jTextField2"/>
+        <Component class="javax.swing.JTextField" name="jTextField3" id="jTextField3"/>
+        <Component class="javax.swing.JTextField" name="jTextField4" id="jTextField4"/>
+        <Component class="javax.swing.JTextField" name="jTextField5" id="jTextField5"/>
+        <Component class="javax.swing.JLabel" name="lion" id="lion"/>
+        <Component class="javax.swing.JLabel" name="citilink" id="citilink"/>
+        <Component class="javax.swing.JLabel" name="batik" id="batik"/>
+        <Component class="javax.swing.JLabel" name="superair" id="superair"/>
       </SubComponents>
     </Container>
   </SubComponents>
