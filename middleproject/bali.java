@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class bali extends javax.swing.JFrame {
 
     /**
-     * Creates new form FlightBookingApp
+     * Creates new form bali
      */
     public bali() {
         initComponents();
