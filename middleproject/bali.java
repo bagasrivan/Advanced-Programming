@@ -23,167 +23,167 @@ public class bali extends javax.swing.JFrame {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
-        departureTimeLabel1 = new javax.swing.JLabel();
-        departureTimeLabel2 = new javax.swing.JLabel();
-        departureTimeLabel3 = new javax.swing.JLabel();
-        backButton = new javax.swing.JButton();
-        passengerCountLabel = new javax.swing.JLabel();
-        passengerCountField = new javax.swing.JTextField();
-        submitButton = new javax.swing.JButton();
-        orderDetailsLabel = new javax.swing.JLabel();
-        titleLabel = new javax.swing.JLabel();
-        clearSelectionButton = new javax.swing.JButton();
-        garudaRadioButton = new javax.swing.JRadioButton();
-        confirmCheckBox = new javax.swing.JCheckBox();
-        lionAirRadioButton = new javax.swing.JRadioButton();
-        notesLabel = new javax.swing.JLabel();
-        chooseAirlineLabel = new javax.swing.JLabel();
-        payButton = new javax.swing.JButton();
-        citilinkRadioButton = new javax.swing.JRadioButton();
-        batikAirRadioButton = new javax.swing.JRadioButton();
-        superAirJetRadioButton = new javax.swing.JRadioButton();
-        priceField1 = new javax.swing.JTextField();
-        priceField2 = new javax.swing.JTextField();
-        priceField3 = new javax.swing.JTextField();
-        priceField4 = new javax.swing.JTextField();
-        priceField5 = new javax.swing.JTextField();
-        departureTimeLabel4 = new javax.swing.JLabel();
-        departureTimeLabel5 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        inputPassenger = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        output = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        garuda = new javax.swing.JRadioButton();
+        check = new javax.swing.JCheckBox();
+        lion = new javax.swing.JRadioButton();
+        infoLabel = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        citilink = new javax.swing.JRadioButton();
+        batik = new javax.swing.JRadioButton();
+        superair = new javax.swing.JRadioButton();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
 
-        departureTimeLabel1.setText("15:05 WITA - 16:20 WITA");
+        jLabel5.setText("15:05 WITA - 16:20 WITA");
 
-        departureTimeLabel2.setText("06:00 WITA - 07:40 WITA");
+        jLabel6.setText("06:00 WITA - 07:40 WITA");
 
-        departureTimeLabel3.setText("07:30 WITA - 09:00 WITA");
+        jLabel7.setText("07:30 WITA - 09:00 WITA");
 
-        backButton.setBackground(new java.awt.Color(255, 255, 51));
-        backButton.setText("Back");
-        backButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setBackground(new java.awt.Color(255, 255, 51));
+        jButton1.setText("Back");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backButtonActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        passengerCountLabel.setText("Enter Number of Passengers:");
+        jLabel8.setText("Enter Number of Passengers:");
 
-        submitButton.setBackground(new java.awt.Color(0, 255, 0));
-        submitButton.setText("Submit");
-        submitButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setBackground(new java.awt.Color(0, 255, 0));
+        jButton2.setText("Submit");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                submitButtonActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
 
-        orderDetailsLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        output.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        titleLabel.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        titleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        titleLabel.setText("FLIGHT TICKET BOOKING FROM BANJARMASIN TO BALI");
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("FLIGHT TICKET PURCHASE FROM BANJARMASIN TO BALI");
 
-        clearSelectionButton.setBackground(new java.awt.Color(255, 0, 0));
-        clearSelectionButton.setText("Clear Selection");
-        clearSelectionButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton3.setBackground(new java.awt.Color(255, 0, 0));
+        jButton3.setText("Clear Selection");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clearSelectionButtonActionPerformed(evt);
+                jButton3ActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(garudaRadioButton);
-        garudaRadioButton.setText("Garuda Indonesia GA-540");
+        buttonGroup1.add(garuda);
+        garuda.setText("Garuda Indonesia GA-540");
 
-        confirmCheckBox.setText("Selection and Details Are Correct");
+        check.setText("Selection and Information Are Correct");
 
-        buttonGroup1.add(lionAirRadioButton);
-        lionAirRadioButton.setText("Lion Air JT-340");
+        buttonGroup1.add(lion);
+        lion.setText("Lion Air JT-340");
 
-        notesLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        infoLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        chooseAirlineLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        chooseAirlineLabel.setText("Please Select an Available Airline");
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Please Choose An Available Airline");
 
-        payButton.setBackground(new java.awt.Color(0, 255, 0));
-        payButton.setText("Pay");
-        payButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton4.setBackground(new java.awt.Color(0, 255, 0));
+        jButton4.setText("Pay");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                payButtonActionPerformed(evt);
+                jButton4ActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(citilinkRadioButton);
-        citilinkRadioButton.setText("Citilink QG-488");
-        citilinkRadioButton.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(citilink);
+        citilink.setText("Citilink QG-488");
+        citilink.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                citilinkRadioButtonActionPerformed(evt);
+                citilinkActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(batikAirRadioButton);
-        batikAirRadioButton.setText("Batik Air ID-6218");
+        buttonGroup1.add(batik);
+        batik.setText("Batik Air ID-6218");
 
-        buttonGroup1.add(superAirJetRadioButton);
-        superAirJetRadioButton.setText("Super Air Jet UA-633");
+        buttonGroup1.add(superair);
+        superair.setText("Super Air Jet UA-633");
 
-        priceField1.setText("Rp.1,845,000");
+        jTextField1.setText("Rp.1,845,000");
 
-        priceField2.setText("Rp.1,198,000");
+        jTextField2.setText("Rp.1,198,000");
 
-        priceField3.setText("Rp.1,281,000");
-        priceField3.addActionListener(new java.awt.event.ActionListener() {
+        jTextField3.setText("Rp.1,281,000");
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                priceField3ActionPerformed(evt);
+                jTextField3ActionPerformed(evt);
             }
         });
 
-        priceField4.setText("Rp.1,512,000");
+        jTextField4.setText("Rp.1,512,000");
 
-        priceField5.setText("Rp.1,169,000");
+        jTextField5.setText("Rp.1,169,000");
 
-        departureTimeLabel4.setText("14:00 WITA - 15:30 WITA");
+        jLabel3.setText("14:00 WITA - 15:30 WITA");
 
-        departureTimeLabel5.setText("12:30 WITA - 14:10 WITA");
+        jLabel4.setText("12:30 WITA - 14:10 WITA");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(titleLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(chooseAirlineLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(65, 65, 65)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(departureTimeLabel4)
-                            .addComponent(garudaRadioButton)
-                            .addComponent(lionAirRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(departureTimeLabel5)
-                            .addComponent(citilinkRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(departureTimeLabel1)
-                            .addComponent(batikAirRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(departureTimeLabel2)
-                            .addComponent(superAirJetRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(departureTimeLabel3))
+                            .addComponent(jLabel3)
+                            .addComponent(garuda)
+                            .addComponent(lion, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4)
+                            .addComponent(citilink, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5)
+                            .addComponent(batik, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6)
+                            .addComponent(superair, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(priceField4)
-                            .addComponent(priceField3)
-                            .addComponent(priceField1)
-                            .addComponent(priceField5)
-                            .addComponent(priceField2)))
+                            .addComponent(jTextField4)
+                            .addComponent(jTextField3)
+                            .addComponent(jTextField1)
+                            .addComponent(jTextField5)
+                            .addComponent(jTextField2)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(backButton)
+                        .addComponent(jButton1)
                         .addGap(116, 116, 116)
-                        .addComponent(submitButton)
+                        .addComponent(jButton2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(clearSelectionButton))
+                        .addComponent(jButton3))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(passengerCountLabel)
+                        .addComponent(jLabel8)
                         .addGap(44, 44, 44)
-                        .addComponent(passengerCountField, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(inputPassenger, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(153, 153, 153))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -191,82 +191,77 @@ public class bali extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(114, 114, 114)
-                        .addComponent(orderDetailsLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(output, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(infoLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(notesLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(6, 6, 6))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(confirmCheckBox)
+                        .addGap(294, 294, 294)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(check)
+                            .addComponent(jButton4))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(236, 236, 236)
-                .addComponent(payButton)
-                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(titleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(chooseAirlineLabel)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(garudaRadioButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(departureTimeLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lionAirRadioButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(departureTimeLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(citilinkRadioButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(departureTimeLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(batikAirRadioButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(departureTimeLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(superAirJetRadioButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(departureTimeLabel5))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(priceField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(priceField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(priceField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(priceField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(priceField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(passengerCountLabel)
-                    .addComponent(passengerCountField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(backButton)
-                    .addComponent(submitButton)
-                    .addComponent(clearSelectionButton))
-                .addGap(18, 18, 18)
-                .addComponent(orderDetailsLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8)
+                    .addComponent(inputPassenger, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(17, 17, 17)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2)
+                    .addComponent(jButton3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(confirmCheckBox)
+                .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(notesLabel)
+                .addComponent(garuda)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lion)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(citilink)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(batik)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(superair)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(payButton)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addComponent(check)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(infoLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(output, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -276,64 +271,59 @@ public class bali extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
-        // Your submission logic here
-        if (garudaRadioButton.isSelected()) {
-            orderDetailsLabel.setText("Garuda Indonesia GA-540");
-        } else if (lionAirRadioButton.isSelected()) {
-            orderDetailsLabel.setText("Lion Air JT-340");
-        } else if (citilinkRadioButton.isSelected()) {
-            orderDetailsLabel.setText("Citilink QG-488");
-        } else if (batikAirRadioButton.isSelected()) {
-            orderDetailsLabel.setText("Batik Air ID-6218");
-        } else if (superAirJetRadioButton.isSelected()) {
-            orderDetailsLabel.setText("Super Air Jet UA-633");
-        } else {
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        dispose(); // Close the current window
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        String selectedAirline = "";
+        if (garuda.isSelected()) {
+            selectedAirline = "Garuda Indonesia GA-540";
+        } else if (lion.isSelected()) {
+            selectedAirline = "Lion Air JT-340";
+        } else if (citilink.isSelected()) {
+            selectedAirline = "Citilink QG-488";
+        } else if (batik.isSelected()) {
+            selectedAirline = "Batik Air ID-6218";
+        } else if (superair.isSelected()) {
+            selectedAirline = "Super Air Jet UA-633";
+        }
+
+        if (selectedAirline.isEmpty()) {
             JOptionPane.showMessageDialog(this, "Please select an airline.");
-            return;
+        } else {
+            infoLabel.setText("Selected Airline: " + selectedAirline);
         }
-        if (passengerCountField.getText().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Please enter the number of passengers.");
-            return;
-        }
-        int passengerCount = Integer.parseInt(passengerCountField.getText());
-        if (passengerCount < 1) {
-            JOptionPane.showMessageDialog(this, "The number of passengers must be at least 1.");
-            return;
-        }
-        if (!confirmCheckBox.isSelected()) {
-            JOptionPane.showMessageDialog(this, "Please confirm that your selection and details are correct.");
-            return;
-        }
-        // Process the order
-        JOptionPane.showMessageDialog(this, "Order submitted successfully!");
-    }//GEN-LAST:event_submitButtonActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        // Your back button logic here
-        this.dispose();
-    }//GEN-LAST:event_backButtonActionPerformed
-
-    private void clearSelectionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearSelectionButtonActionPerformed
-        // Clear all selections
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         buttonGroup1.clearSelection();
-        orderDetailsLabel.setText("");
-        passengerCountField.setText("");
-        confirmCheckBox.setSelected(false);
-    }//GEN-LAST:event_clearSelectionButtonActionPerformed
+        inputPassenger.setText("");
+        infoLabel.setText("");
+        output.setText("");
+    }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void payButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payButtonActionPerformed
-        // Your payment logic here
-        JOptionPane.showMessageDialog(this, "Payment successful!");
-    }//GEN-LAST:event_payButtonActionPerformed
+    private void citilinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_citilinkActionPerformed
+        // Handle Citilink specific action
+    }//GEN-LAST:event_citilinkActionPerformed
 
-    private void citilinkRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_citilinkRadioButtonActionPerformed
-        // Your Citilink logic here
-    }//GEN-LAST:event_citilinkRadioButtonActionPerformed
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        if (check.isSelected()) {
+            String numPassengers = inputPassenger.getText();
+            if (numPassengers.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Please enter the number of passengers.");
+            } else {
+                String message = "Thank you for booking. Number of Passengers: " + numPassengers;
+                JOptionPane.showMessageDialog(this, message);
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "Please check the selection and information box.");
+        }
+    }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void priceField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_priceField3ActionPerformed
-        // Your price field logic here
-    }//GEN-LAST:event_priceField3ActionPerformed
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // Handle TextField3 specific action
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -368,33 +358,33 @@ public class bali extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton backButton;
-    private javax.swing.JRadioButton batikAirRadioButton;
+    private javax.swing.JRadioButton batik;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton clearSelectionButton;
-    private javax.swing.JCheckBox confirmCheckBox;
-    private javax.swing.JRadioButton citilinkRadioButton;
-    private javax.swing.JLabel chooseAirlineLabel;
-    private javax.swing.JLabel departureTimeLabel1;
-    private javax.swing.JLabel departureTimeLabel2;
-    private javax.swing.JLabel departureTimeLabel3;
-    private javax.swing.JLabel departureTimeLabel4;
-    private javax.swing.JLabel departureTimeLabel5;
-    private javax.swing.JLabel notesLabel;
-    private javax.swing.JTextField passengerCountField;
-    private javax.swing.JLabel passengerCountLabel;
-    private javax.swing.JTextField priceField1;
-    private javax.swing.JTextField priceField2;
-    private javax.swing.JTextField priceField3;
-    private javax.swing.JTextField priceField4;
-    private javax.swing.JTextField priceField5;
-    private javax.swing.JButton payButton;
-    private javax.swing.JRadioButton superAirJetRadioButton;
-    private javax.swing.JButton submitButton;
-    private javax.swing.JLabel titleLabel;
-    private javax.swing.JLabel orderDetailsLabel;
-    private javax.swing.JRadioButton garudaRadioButton;
-    private javax.swing.JRadioButton lionAirRadioButton;
+    private javax.swing.JCheckBox check;
+    private javax.swing.JRadioButton citilink;
+    private javax.swing.JTextField inputPassenger;
+    private javax.swing.JLabel infoLabel;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JRadioButton lion;
+    private javax.swing.JRadioButton superair;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JLabel output;
+    private javax.swing.JRadioButton garuda;
     // End of variables declaration//GEN-END:variables
 }
